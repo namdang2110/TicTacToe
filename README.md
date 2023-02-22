@@ -1,5 +1,3 @@
 # TicTacToe nhiều người chơi 
 
-Trò chơi Tic Tac Toe đơn giản trên android
-
-f
+# Đề bài: Tạo ra trò chơi cờ Caro có thể chơi được trực tuyến
