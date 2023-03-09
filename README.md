@@ -1,6 +1,4 @@
-# TicTacToe nhiều người chơi 
-
-# Đề bài: Tạo ra trò chơi cờ Caro có thể chơi được trực tuyến
+# TicTacToe chơi 2 người trên 1 thiết bị
 
 
 Nhật ký làm bài:
