@@ -2,6 +2,7 @@ package com.example.tictactoe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -118,18 +119,23 @@ public class MainActivity extends AppCompatActivity {
 
     private void performAction(ImageView  imageView, int selectedBoxPosition) {
         boxPositions[selectedBoxPosition] = playerTurn;
+        final MediaPlayer hoa = MediaPlayer.create(this,R.raw.hoa);
+        final MediaPlayer o_win = MediaPlayer.create(this,R.raw.o_win);
+        final MediaPlayer x_win = MediaPlayer.create(this,R.raw.x_win);
 
         if (playerTurn == 1) {
             imageView.setImageResource(R.drawable.ximage);
             if (checkResults()) {
                 ResultDialog resultDialog = new ResultDialog(MainActivity.this, binding.playerOneName.getText().toString()
-                + " thang cuoc !", MainActivity.this);
+                + " chiến thắng !", MainActivity.this);
                 resultDialog.setCancelable(false);
                 resultDialog.show();
+                x_win.start();
             } else if(totalSelectedBoxes == 9) {
-                ResultDialog resultDialog = new ResultDialog(MainActivity.this, "Tran dau hoa", MainActivity.this);
+                ResultDialog resultDialog = new ResultDialog(MainActivity.this, "Trận đấu hòa", MainActivity.this);
                 resultDialog.setCancelable(false);
                 resultDialog.show();
+                hoa.start();
             } else {
                 changePlayerTurn(2);
                 totalSelectedBoxes++;
@@ -138,13 +144,15 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageResource(R.drawable.oimage);
             if (checkResults()) {
                 ResultDialog resultDialog = new ResultDialog(MainActivity.this, binding.playerTwoName.getText().toString()
-                        + " thang cuoc !", MainActivity.this);
+                        + " chiến thắng !", MainActivity.this);
                 resultDialog.setCancelable(false);
                 resultDialog.show();
+                o_win.start();
             } else if(totalSelectedBoxes == 9) {
-                ResultDialog resultDialog = new ResultDialog(MainActivity.this, "Tran dau hoa", MainActivity.this);
+                ResultDialog resultDialog = new ResultDialog(MainActivity.this, "Trận đấu hòa", MainActivity.this);
                 resultDialog.setCancelable(false);
                 resultDialog.show();
+                hoa.start();
             } else {
                 changePlayerTurn(1);
                 totalSelectedBoxes++;

@@ -3,6 +3,7 @@ package com.example.tictactoe;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,9 @@ public class AddPlayers extends AppCompatActivity {
         EditText playerTwo = findViewById(R.id.playerTwo);
         Button startGameButton = findViewById(R.id.startGameButton);
 
+        final MediaPlayer error = MediaPlayer.create(this,R.raw.error);
+        final MediaPlayer start = MediaPlayer.create(this,R.raw.start);
+
         startGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,12 +32,14 @@ public class AddPlayers extends AppCompatActivity {
                 String getPlayerTwoName = playerTwo.getText().toString();
 
                 if (getPlayerOneName.isEmpty() || getPlayerTwoName.isEmpty()) {
-                    Toast.makeText(AddPlayers.this, "Nhap ten nguoi choi", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddPlayers.this, "Chưa nhập tên người chơi", Toast.LENGTH_SHORT).show();
+                    error.start();
                 } else {
                     Intent intent = new Intent(AddPlayers.this, MainActivity.class);
                     intent.putExtra("playerOne", getPlayerOneName);
                     intent.putExtra("playerTwo", getPlayerTwoName);
                     startActivity(intent);
+                    start.start();
                 }
             }
         });
