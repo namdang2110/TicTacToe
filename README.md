@@ -5,7 +5,6 @@ Nhật ký làm bài:
 
 
 27/2/2023:
-  - Tham khảo Tic-Tac-Toe app (https://androidknowledge.com/tic-tac-toe-app-in-android-studio/)
   - Giả lập máy ảo Pixel 6 Pro API 33
   - Chạy được phần mềm trên máy ảo
   - Giao diện đơn giản, hơi xấu
