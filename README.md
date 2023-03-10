@@ -29,3 +29,11 @@ Nhật ký làm bài:
   - Sẽ làm thêm chế độ 1 người chơi với máy
   - Đang tìm hiểu thêm về chơi giữa các thiết bị với nhau qua mạng
 
+
+10/3/2023:
+  - Đã thêm giọng chị google vào game
+  - Khi không nhập tên người chơi, sẽ phát ra âm thanh "chưa nhập tên"
+  - Nhập đủ tên người chơi và bấm bắt đầu, sẽ phát ra âm thanh "bắt đầu trò chơi"
+  - Khi một trong hai người thắng cuộc, phát ra âm thanh "X thắng" hoặc "O thắng"
+  - Khi kết quả hòa, phát ra âm thanh "Trận đấu hòa"
+  - Chỉnh sửa lại giao diện, thêm tiếng việt
