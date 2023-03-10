@@ -31,6 +31,7 @@ Nhật ký làm bài:
 
 
 10/3/2023:
+  - Học được cách thêm âm thanh Sound vào chương trình, có thể tải âm thanh trên mạng về
   - Đã thêm giọng chị google vào game
   - Khi không nhập tên người chơi, sẽ phát ra âm thanh "chưa nhập tên"
   - Nhập đủ tên người chơi và bấm bắt đầu, sẽ phát ra âm thanh "bắt đầu trò chơi"
