@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ENTER \n PLAYERS NAMES"
+                android:text="NHẬP TÊN \n2 NGƯỜI CHƠI"
                 android:textAlignment="center"
                 android:textSize="36sp"
                 android:textStyle="bold"
@@ -43,7 +43,7 @@
                 android:padding="8dp"
                 android:maxLines="1"
                 android:textStyle="italic"
-                android:hint="Enter player one name"
+                android:hint="Tên người chơi 1"
                 android:textColor="@color/lavender"
                 android:drawableLeft="@drawable/ic_xicon"
                 android:drawablePadding="8dp"/>
@@ -57,7 +57,7 @@
                 android:padding="8dp"
                 android:maxLines="1"
                 android:textStyle="italic"
-                android:hint="Enter player two name"
+                android:hint="Tên người chơi 2"
                 android:textColor="@color/lavender"
                 android:drawableLeft="@drawable/ic_oicon"
                 android:drawablePadding="8dp"/>
@@ -67,7 +67,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="30dp"
                 android:id="@+id/startGameButton"
-                android:text="Start Game"
+                android:text="Bắt đầu trò chơi"
                 android:textSize="18sp"
                 app:cornerRadius = "20dp"/>
 

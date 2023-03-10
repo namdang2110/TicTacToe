@@ -28,7 +28,7 @@ public class AddPlayers extends AppCompatActivity {
                 String getPlayerTwoName = playerTwo.getText().toString();
 
                 if (getPlayerOneName.isEmpty() || getPlayerTwoName.isEmpty()) {
-                    Toast.makeText(AddPlayers.this, "Please enter player name", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddPlayers.this, "Nhap ten nguoi choi", Toast.LENGTH_SHORT).show();
                 } else {
                     Intent intent = new Intent(AddPlayers.this, MainActivity.class);
                     intent.putExtra("playerOne", getPlayerOneName);

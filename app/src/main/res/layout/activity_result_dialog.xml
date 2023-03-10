@@ -33,7 +33,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:backgroundTint="@color/white"
-            android:text="Start Again"
+            android:text="Chơi lại"
             android:layout_margin="20dp"
             android:textColor="@color/lavender"
             app:cornerRadius = "20dp"/>
