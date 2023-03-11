@@ -30,6 +30,7 @@ Nhật ký làm bài:
   - Đang tìm hiểu thêm về chơi giữa các thiết bị với nhau qua mạng
 
 
+
 10/3/2023:
   - Học được cách thêm âm thanh Sound vào chương trình, có thể tải âm thanh trên mạng về
   - Đã thêm giọng chị google vào game
@@ -38,3 +39,9 @@ Nhật ký làm bài:
   - Khi một trong hai người thắng cuộc, phát ra âm thanh "X thắng" hoặc "O thắng"
   - Khi kết quả hòa, phát ra âm thanh "Trận đấu hòa"
   - Chỉnh sửa lại giao diện, thêm tiếng việt
+  
+ 
+ 
+11/3/2023:
+  - Học được cách thay đổi hình nền của app
+  - Thay đổi hình app trên điện thoại bằng hình của sinh viên :))
